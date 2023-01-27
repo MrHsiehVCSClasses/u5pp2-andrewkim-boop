@@ -79,8 +79,9 @@ public class PawnTests {
         board[7][0].moveTo(6, 0);
       
         assertAll(
-            () -> assertFalse(board[1][0].canMoveTo(3, 0), "black pawns must not be able to move two spaces on their second turn"), 
-            () -> assertFalse(board[6][0].canMoveTo(4, 0), "white pawns must not be able to move two spaces on their second turn") 
+            () -> assertFalse(board[1][0].canMoveTo(3, 0), "black pawns must not be able to move two spaces on their second turn"),
+                        () -> assertFalse(board[6][0].canMoveTo(4, 0), "white pawns must not be able to move two spaces on their second turn") 
+ 
         );
     }
 
